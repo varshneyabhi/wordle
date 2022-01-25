@@ -51,7 +51,7 @@ def print_guess_table(table: List[List[str]]):
         console.print(
             "    [magenta]Magenta[/magenta]: Letter doesn't exist in original word."
         )
-        console.print("    [cyan]Cyan[/cyan]: Letter exists, but at different place.")
+        console.print("    [yellow]Yellow[/yellow]: Letter exists, but at different place.")
         console.print("    [green]Green[/green]: Letter exists, at same place.")
 
 
@@ -83,7 +83,7 @@ def create_and_print_guess_table(
                     id_used[x].append(idx)
 
             if same_pos_not_found:
-                print_vals.append(f"[cyan]{x}[/cyan]")
+                print_vals.append(f"[yellow]{x}[/yellow]")
             else:
                 print_vals.append(f"[magenta]{x}[/magenta]")
         else:
